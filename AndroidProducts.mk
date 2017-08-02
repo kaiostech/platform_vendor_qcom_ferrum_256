@@ -1,0 +1,2 @@
+PRODUCT_MAKEFILES := \
+	$(LOCAL_DIR)/msm8909_256.mk
