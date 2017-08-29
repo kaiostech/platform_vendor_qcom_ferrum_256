@@ -204,7 +204,7 @@ LOCAL_SRC_FILES    := ../msm8909/hostapd.deny
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE       := init.qcom.modem_ubi_mount.sh
+LOCAL_MODULE       := init.qcom.ubi_mount_helper.sh
 LOCAL_MODULE_TAGS  := optional eng
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_ROOT_OUT)
