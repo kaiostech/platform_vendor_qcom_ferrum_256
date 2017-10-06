@@ -34,7 +34,7 @@ endif
 # Compile Linux Kernel
 #----------------------------------------------------------------------
 ifeq ($(KERNEL_DEFCONFIG),)
-    KERNEL_DEFCONFIG := msm8909-256mb_defconfig
+    KERNEL_DEFCONFIG := msm8909-256mb-perf_defconfig
 endif
 
 include kernel/AndroidKernel.mk
