@@ -38,9 +38,6 @@ on early-init
     write /sys/kernel/mm/ksm/deferred_timer 1
     write /sys/kernel/mm/ksm/run 1
 
-on post-fs
-    export LD_PRELOAD libNimsWrap.so
-
 import init.emmc.${ro.boot.emmc}.rc
 
 
