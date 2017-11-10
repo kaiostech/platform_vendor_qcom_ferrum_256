@@ -35,3 +35,13 @@ PRODUCT_COPY_FILES += \
 
 # Export path for platform preferences
 EXPORT_DEVICE_PREFS := device/qcom/msm8909_256/default-prefs
+
+# Config 256MB support to true on 256MB device
+HAVE_KAIOS_256MB_SUPPORT := true
+
+GECKO_CONFIGURE_ARGS += \
+  --disable-camera-hdr \
+  --disable-nfc \
+  --disable-necko-wifi \
+  --disable-wifi-support \
+  --disable-webrtc
