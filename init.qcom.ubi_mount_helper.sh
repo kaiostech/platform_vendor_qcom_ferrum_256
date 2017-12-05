@@ -74,5 +74,12 @@ eval Mount userdata 1 0 /data "nosuid,nodev,bulk_read" "attach"
 eval Mount userdata 1 1 /cache "nosuid,nodev" "noattach"
 eval Mount userdata 1 2 /persist "nosuid,nodev" "noattach"
 
-#Mount modem onto /firmware
+# Mount modem onto /firmware
 eval Mount modem 2 0 /firmware "nosuid,nodev" "attach"
+
+# Mount usbmsc partition onto /data/usbmsc_mnt
+# Since this mount point is within /data, create this
+# only once userdata is mounted onto /data.
+mkdir -p /data/usbmsc_mnt
+chmod 0771 /data/usbmsc_mnt
+eval Mount usbmsc 3 0 /data/usbmsc_mnt "nosuid,nodev,bulk_read" "attach"
