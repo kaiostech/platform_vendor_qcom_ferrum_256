@@ -31,3 +31,6 @@ PRODUCT_COPY_FILES += \
     external/libnfc-nci/halimpl/pn54x/libnfc-nxp_RF-PN80S_example.conf:system/vendor/libnfc-nxp_RF.conf \
     external/libnfc-nci/halimpl/pn54x/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
     external/libnfc-nci/halimpl/pn54x/firmware/libpn553_fw.so:system/vendor/firmware/libpn553_fw.so
+
+# Export path for platform preferences
+EXPORT_DEVICE_PREFS := device/qcom/msm8909_256/default-prefs
