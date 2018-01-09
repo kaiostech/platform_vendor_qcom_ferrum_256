@@ -39,7 +39,7 @@ Mount () {
 
     device="/dev/ubi${device_num}_${volume_num}"
 
-    mtd_block_number=`cat /proc/mtd | grep -i $partition | awk -F ':' '{print $1}' | cut -c4-`
+    mtd_block_number=`cat /proc/mtd | grep -i $partition |  cut -d : -f 1 | cut -c4-`
 
     # Check whether an explicit ubiattach needs to be done or not
     if [ "$should_attach" == "attach" ]; then
