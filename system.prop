@@ -208,3 +208,9 @@ ro.sys.fw.bservice_age=5000
 
 #save memory property for camera daemon
 cameradaemon.SaveMemAtBoot=1
+
+#property to increase virtual address space(VAS) of
+#Mediaserver for 256 MB RAM. It is made equal to what
+#it would be for 512 MB RAM. Need to do this for
+#higher ION mappings of Camera usecase.
+ro.media.maxmem=268263385
