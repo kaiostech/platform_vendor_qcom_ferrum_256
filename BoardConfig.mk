@@ -19,6 +19,8 @@
 
 include device/qcom/msm8909/BoardConfig.mk
 
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
 # Set the framebuffer size to 2 for low ram targets
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 TARGET_ARCH_LOWMEM := true
