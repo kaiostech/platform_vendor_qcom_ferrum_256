@@ -31,7 +31,7 @@
 /dev/ubi1_2           /persist        ubifs         noatime,nosuid,nodev                            wait,check
 /dev/ubi1_1           /cache          ubifs         noatime,nosuid,nodev                            wait,check
 /dev/ubi1_0           /data           ubifs         noatime,nosuid,nodev                            wait,check,length=-16384
-/dev/block/mmcblk0p1  /sdcard         vfat          nosuid,nodev,barrier=1,data=ordered,nodelalloc  wait
+/dev/block/mmcblk0p1  /sdcard         vfat          nosuid,nodev                                    wait
 boot                  /boot           mtd           defaults                                        defaults
 recovery              /recovery       mtd           defaults                                        defaults
 misc                  /misc           mtd           defaults                                        defaults
