@@ -3,6 +3,8 @@ PRODUCT_COPY_FILES += \
        device/qcom/msm8909_512/mixer_paths_qrd_skub.xml:system/etc/mixer_paths_qrd_skub.xml \
        device/qcom/msm8909_512/mixer_paths_qrd_skub.xml:system/etc/mixer_paths_qrd_sku3.xml
 
+PRODUCT_COPY_FILES += device/qcom/msm8909/media/media_codecs_8905_256.xml:system/etc/media_codecs_8905.xml
+
 PRODUCT_PROPERTY_OVERRIDES += \
        ro.kaios.torch_node=/sys/class/leds/flashlight/brightness \
        ro.kaios.torch_enable_value=127
