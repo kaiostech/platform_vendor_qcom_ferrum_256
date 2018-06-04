@@ -16,6 +16,7 @@ $(call inherit-product, device/qcom/msm8909/msm8909.mk)
 
 PRODUCT_NAME := msm8909_256
 PRODUCT_DEVICE := msm8909_256
+PRODUCT_AAPT_PREF_CONFIG := ldpi
 
 PRODUCT_PACKAGES += updater
 
